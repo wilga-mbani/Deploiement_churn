@@ -1,0 +1,20 @@
+training/
+.venv/
+env/
+__pycache__/
+
+#fichier système
+.DS_Store
+Thumbs.db
+
+#fichiers de configuration sensible
+*.env
+*.ini
+*.cfg
+
+# dossier
+.vscode/
+.idea/
+
+#notebook
+.ipynb_checkpoints/
