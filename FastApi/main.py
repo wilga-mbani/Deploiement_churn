@@ -11,7 +11,7 @@ import os
 app= FastAPI(
     title= " API sur un modèle de classification GradientBoostingClassification ",
     description= "API pour faire des prédictions sur les clients qui vont quitter ou non l'entreprise",
-    version='2.0'
+    version='3.0'
 )
 
 

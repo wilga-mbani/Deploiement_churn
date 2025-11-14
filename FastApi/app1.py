@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # --- URL de ton API FastAPI ---
-API_URL = "https://deploiement-churn.onrender.com/predict"
+API_URL = "https://fastapi-churn-zuj2.onrender.com/predict"
 
 # --- Configuration de la page ---
 st.set_page_config(page_title="Prédiction Churn", layout="wide")
