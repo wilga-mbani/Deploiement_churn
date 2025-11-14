@@ -38,23 +38,13 @@ model = load()
 
 # Définition du format d'entréé
 class ChurnInput(BaseModel):
-   
-    gender: int
-    SeniorCitizen: int
-    Partner: int
-    Dependents: int
     tenure: int
-    PhoneService: int
-    MultipleLines: int
     InternetService: int
     OnlineSecurity: int
     OnlineBackup: int
-    DeviceProtection: int
     TechSupport: int
-    StreamingTV: int
     StreamingMovies: int
     Contract: int
-    PaperlessBilling: int
     PaymentMethod: int
     MonthlyCharges: float
     TotalCharges: float
@@ -84,8 +74,7 @@ async def predict(input_data: ChurnInput):
         )
 
         return {
-            "prediction": churn,
-            "probability": round(probability, 4),
+            "Classe": churn,
             "message": message
         }
 
